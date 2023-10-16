@@ -23,3 +23,7 @@ A apresentação completa utilizada durante o curso está disponível AQUI
 Com isso, você terá acesso ao projeto do Github e links explorados durante as aulas.
 
 Bons estudos wink
+
+# Modelagem UML
+
+Para visualizar abrir com o https://app.diagrams.net/
