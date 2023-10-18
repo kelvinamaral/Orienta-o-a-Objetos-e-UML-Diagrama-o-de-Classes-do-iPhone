@@ -20,5 +20,4 @@ public class NavegadorInternetImpl implements NavegadorInternet {
     public void fecharAba() {
 
     }
-    // Implemente os métodos da interface aqui
 }

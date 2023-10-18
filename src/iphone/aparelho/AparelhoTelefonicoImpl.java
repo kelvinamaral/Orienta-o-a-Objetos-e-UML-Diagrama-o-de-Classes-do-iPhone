@@ -3,7 +3,7 @@ package iphone.aparelho;
 public class AparelhoTelefonicoImpl implements AparelhoTelefonico {
     @Override
     public void atender() {
-
+        System.out.println("Atendendo ligação no telefone");
     }
 
     @Override
@@ -38,7 +38,5 @@ public class AparelhoTelefonicoImpl implements AparelhoTelefonico {
 
     @Override
     public void diminuirVolume() {
-
     }
-    // Implemente os métodos da interface aqui
 }

@@ -5,9 +5,10 @@ import iphone.navegador.NavegadorInternet;
 import iphone.reprodutor.ReprodutorMusical;
 
 public class Iphone implements AparelhoTelefonico, NavegadorInternet, ReprodutorMusical {
+    private int volume = 50; // Volume padrão, 50 no meio
+
     @Override
     public void atender() {
-        // Implemente a lógica para atender uma chamada
         System.out.println("Atendendo ligação no telefone");
     }
 
@@ -23,49 +24,57 @@ public class Iphone implements AparelhoTelefonico, NavegadorInternet, Reprodutor
 
     @Override
     public void finalizarChamada() {
-        System.out.println("Finalizando ligação.");
+        System.out.println("Finalizando ligação");
     }
 
     @Override
     public void ativarVivaVoz() {
-        // Implemente a lógica para ativar o viva-voz
+        System.out.println("Ativando Viva Voz");
     }
 
     @Override
     public void mutar() {
-        // Implemente a lógica para ativar o mudo
+        System.out.println("A chamada foi mutada");
     }
 
     @Override
     public void tocarMusica(String musica) {
-        // Implemente a lógica para tocar música
+        System.out.println("Tocando música: " + musica);
     }
 
     @Override
     public void pausar() {
-        // Implemente a lógica para pausar a música
+        System.out.println("Pausando a música");
     }
 
     @Override
     public void selecionarMusica(String musica) {
-        System.out.println("Selecionando a música: " + musica);
+        System.out.println("Selecionando nova música: " + musica);
     }
 
     @Override
     public void aumentarVolume() {
-        System.out.println("Aumentando Volume. Volume atual: ");
-        // Adjuste
+        if (volume < 100) { // Verifica o volume máximo (normalmente 100)
+            volume++;
+            System.out.println("Aumentando volume para " + volume);
+        } else {
+            System.out.println("O volume já está no máximo.");
+        }
     }
 
     @Override
     public void diminuirVolume() {
-        System.out.println("Diminuindo o Volume. Volume atual: ");
-        // Adjuste
+        if (volume > 0) { // Verifica o volume mínimo (normalmente 0)
+            volume--;
+            System.out.println("Diminuindo volume para " + volume);
+        } else {
+            System.out.println("O volume já está no mínimo.");
+        }
     }
 
     @Override
     public void abrirSite(String site) {
-        System.out.println("Abrindo página do navegador");
+        System.out.println("Abrindo página do navegador: " + site);
     }
 
     @Override
@@ -80,16 +89,39 @@ public class Iphone implements AparelhoTelefonico, NavegadorInternet, Reprodutor
 
     @Override
     public void fecharAba() {
-        System.out.println("Fechando Aba ");
+        System.out.println("Fechando Aba");
     }
 
     public static void main(String[] args) {
-        System.out.println("Testa o código!");
+        System.out.println("Testando o código!");
 
         Iphone iphone = new Iphone();
-        // Chame o método fecharAba na instância
+
+        // Chama os métodos na instância
         iphone.fecharAba();
         iphone.atualizarPagina();
 
+        // Chama outros métodos de AparelhoTelefonico
+        iphone.atender();
+        iphone.ligar();
+        iphone.correioVoz();
+        iphone.finalizarChamada();
+        iphone.ativarVivaVoz();
+        iphone.mutar();
+
+        // Chama outros métodos de ReprodutorMusical
+
+        iphone.tocarMusica("Música - nome!");
+        iphone.pausar();
+        iphone.aumentarVolume();
+        iphone.diminuirVolume();
+
+
+        // Chama outros métodos de NavegadorInternet
+        iphone.abrirSite("#");
+        iphone.novaAba();
+        iphone.atualizarPagina();
+        iphone.fecharAba();
     }
+
 }
