@@ -5,7 +5,5 @@ public interface NavegadorInternet {
     void novaAba();
     void atualizarPagina();
     void fecharAba();
-    void scroll();
-    void aplicarZoom(int nivel);
 
 }
