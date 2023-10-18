@@ -1,4 +1,4 @@
-# Orienta-o-a-Objetos-e-UML-Diagrama-o-de-Classes-do-iPhone
+# Orientação-a-Objetos-e-UML-Diagrama-o-de-Classes-do-iPhone
 Desafio Orientação a Objetos e UML: Diagramação de Classes do iPhone - DIO
 
 # Desafio:
@@ -7,23 +7,23 @@ Chegou a hora de colocarmos em prática toda a concepção de análise de negóc
 Lançamento iPhone 2017
 Agora é a sua vez de ser o protagonista! Implemente o desafio sugerido pela expert criando um repositório próprio e, com isso, aumentando ainda mais seu portfólio de projetos no GitHub!
 
-Pré-requisitos:
+## Pré-requisitos:
 
-Lógica de programação e POO;
+- Lógica de programação e POO;
 
-Conhecimentos básicos(Java);
+- Conhecimentos básicos(Java);
 
-Computador com SO de sua preferência(Windows, Linux, Mac OS);
+- Computador com SO de sua preferência(Windows, Linux, Mac OS);
 
-IDE (Visual Studio Code, Eclipse, etc);
+- IDE (Visual Studio Code, Eclipse, etc);
 
-Slides e GitHub
+## Slides e GitHub
 A apresentação completa utilizada durante o curso está disponível AQUI
 
 Com isso, você terá acesso ao projeto do Github e links explorados durante as aulas.
 
 Bons estudos wink
 
-# Modelagem UML
+## Modelagem UML
 
 Para visualizar abrir com o https://app.diagrams.net/
